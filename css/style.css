@@ -7,7 +7,7 @@
 
 .header {
     width: 100vw;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0 3px 6px #00000029;
 }
 .header__container {
     width: 1352px;
@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.header__container .logo {
+.logo {
     color: #08A6E4;
     font-family: 'Raleway', sans-serif;
     font-size: 32px;
@@ -333,6 +333,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .pricelist__offertbox:nth-child(2) {
     display: flex;
@@ -345,6 +346,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 58px;
+    position: relative;
 }
 .pricelist__offertbox:nth-child(3) {
     display: flex;
@@ -355,6 +357,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .pricelist__h3 {
     font-family: 'Raleway', sans-serif;
@@ -363,31 +366,249 @@
     font-size: 21px;
     padding: 34px 0 14px;
 }
-.pricelist__offertbox:nth-child(1) > .pricelist__price {
+.pricelist__offertbox:nth-child(1) .pricelist__price {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #FB3B64;
     font-size: 46px;
+    line-height: 64px;
 }
 .pricelist__offertbox:nth-child(2) .pricelist__price{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #07ACE6;
     font-size: 46px;
+    line-height: 64px;
 }
 .pricelist__offertbox:nth-child(3) .pricelist__price{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #55DFB4;
     font-size: 46px;
+    line-height: 64px;
 }
 .pricelist__limited {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #000000;
     font-size: 12px;
+    line-height: 14px;
     padding: 5px 0 50px;
 }
 .pricelist__offertbox:nth-child(2) .pricelist__limited {
     padding: 5px 0 61px;
+    line-height: 14px;
+}
+
+.pricelist__list {
+    padding-bottom: 60px;
+}
+
+.pricelist__list li {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.pricelist__offertbox:nth-child(2) .pricelist__list li {
+    margin-bottom: 26px;
+}
+
+.pricelist__checked::before {
+    content: "";
+    background-image: url("../assets/Ckechmark-1.svg");
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pricelist__checked--not::before {
+    content: "";
+    background-image: url("../assets/Close.svg");
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pricelist__btn {
+    height: 50px;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    position: absolute;
+}
+.pricelist__offertbox:nth-child(1) .pricelist__btn {
+    background-color: #FB3B64;
+    width: 150px;
+    bottom: -25px;
+}
+.pricelist__offertbox:nth-child(2) .pricelist__btn {
+    background-color: #07ACE6;
+    width: 165px;
+    bottom: -25px;
+}
+.pricelist__offertbox:nth-child(3) .pricelist__btn {
+    background-color: #55DFB4;
+    width: 150px;
+    bottom: -25px;
+}
+
+.questionform {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.questionform__container{
+    width: 900px;
+    margin: 150px auto 60px;
+    height: 375px;
+    display: flex;
+}
+.questionform__contact {
+    width: 50%;
+    }
+.questionform__contact__h1{
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-size: 49px;
+    line-height: 57px;
+}
+.questionform__contact__p {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 16px 0 22px;
+}
+.questionform__contact__emailphone {
+    font-family: 'Open Sans', sans-serif;
+    color: #A5A5A5;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.questionform__contact__emailphone__img{
+    height: 27px;
+    width: 27px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.questionform__formcontainer {
+    width: 50%;
+}
+.questionform__formcontainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.questionform__formcontainer label {
+    font-family: 'Open Sans', sans-serif;
+    color: #08A6E4;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    display: flex;
+}
+.questionform__formcontainer label:nth-of-type(2) {
+    margin-top: 42px;
+}
+.questionform__formcontainer input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #95989A;
+    line-height: 42px;
+}
+
+.questionform__formcontainer__checkboxbox  {
+    margin-top: 30px;
+}
+.questionform__formcontainer__checkboxbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.questionform__formcontainer__checkboxbox span {
+    height: 24px;
+    width: 24px;
+    flex-shrink: 0;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+}
+.questionform__formcontainer__checkboxbox input:checked ~ span {
+    background-image: url("../assets/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.questionform__formcontainer__checkboxbox p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #707070;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 10px;
+    letter-spacing: 0;
+
+}
+.questionform__formcontainer button {
+    margin-top: 20px;
+    height: 57px;
+    width: 226px;
+    border: none;
+    border-radius: 28px;
+    background-color: #08A6E4;
+    box-shadow: 5px 10px 14px #07ACE629;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+.footer {
+    width: 100vw;
+    box-shadow: 0px -5px 40px #00000029;
+}
+.footer__container {
+    width: 1352px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__container p {
+    font-family: 'Open Sans', sans-serif;
+    color: #A5A5A5;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 6px;
+}
+.footer__linkbox {
+    display: flex;
+    justify-content: center;
+}
+.footer__twitter {
+    margin-right: 20px;
 }
