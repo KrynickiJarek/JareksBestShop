@@ -1,0 +1,119 @@
+.questionform {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.questionform__container{
+  width: 900px;
+  margin: 150px auto 60px;
+  height: 375px;
+  display: flex;
+}
+.questionform__contact {
+  width: 50%;
+}
+.questionform__contact__h1{
+  font-family: $font-raleway;
+  color: $color-black;
+  font-size: 49px;
+  line-height: 57px;
+}
+.questionform__contact__p {
+  font-family: $font-open-sans;
+  color: $color-black;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 16px 0 22px;
+}
+.questionform__contact__emailphone {
+  font-family: $font-open-sans;
+  color: $color-grey;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.questionform__contact__emailphone__img{
+  height: 27px;
+  width: 27px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.questionform__formcontainer {
+  width: 50%;
+}
+.questionform__formcontainer form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.questionform__formcontainer label {
+  font-family: $font-open-sans;
+  color: $color-blue;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  display: flex;
+}
+.questionform__formcontainer label:nth-of-type(2) {
+  margin-top: 42px;
+}
+.questionform__formcontainer input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #95989A;
+  line-height: 42px;
+}
+
+.questionform__formcontainer__checkboxbox  {
+  margin-top: 30px;
+}
+.questionform__formcontainer__checkboxbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.questionform__formcontainer__checkboxbox span {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+}
+.questionform__formcontainer__checkboxbox input:checked ~ span {
+  background-image: url("../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+.questionform__formcontainer__checkboxbox p {
+  font-family: $font-open-sans;
+  font-size: 12px;
+  line-height: 17px;
+  color: #707070;
+  background-color: $color-white;
+  cursor: pointer;
+  margin-left: 10px;
+  letter-spacing: 0;
+
+}
+.questionform__formcontainer button {
+  margin-top: 20px;
+  height: 57px;
+  width: 226px;
+  border: none;
+  border-radius: 28px;
+  background-color: $color-blue;
+  box-shadow: 5px 10px 14px #07ACE629;
+  color: $color-white;
+  font-family: $font-open-sans;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}

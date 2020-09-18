@@ -1,0 +1,41 @@
+
+.openning {
+  width: 100vw;
+  height: 712px;
+  margin-top: 130px;
+  background-image: url("../assets/Background.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.openning__h1{
+  font-family: $font-raleway;
+  color: $color-black;
+  font-size: 49px;
+
+}
+.openning__p {
+  font-family: $font-open-sans;
+  color: $color-black;
+  font-size: 16px;
+  padding: 20px 0 38px;
+}
+
+.openning__a{
+  font-family: $font-open-sans;
+  color: $color-white;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: $color-blue;
+  height: 67px;
+  width: 440px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 67px;
+  box-shadow: 5px 10px 14px #07ACE629;
+}

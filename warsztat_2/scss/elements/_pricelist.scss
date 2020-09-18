@@ -1,0 +1,156 @@
+.pricelist{
+  height: 700px;
+  width: 100vw;
+}
+.pricelist__h2 {
+  text-align: center;
+  font-family: $font-raleway;
+  color: $color-black;
+  font-size: 36px;
+  padding: 100px 0 50px;
+}
+.pricelist__container {
+  display: flex;
+  width: 1264px;
+  height: 500px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.pricelist__offertbox:nth-child(1) {
+  display: flex;
+  height: 461px;
+  width: 372px;
+  border: 1px solid $color-redish;
+  border-radius: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pricelist__offertbox:nth-child(2) {
+  display: flex;
+  height: 500px;
+  width: 405px;
+  border: 1px solid #07ACE6;
+  border-radius: 18px;
+  box-shadow: 5px 10px 27px #07ACE629;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 58px;
+  position: relative;
+}
+.pricelist__offertbox:nth-child(3) {
+  display: flex;
+  height: 461px;
+  width: 372px;
+  border: 1px solid $color-green;
+  border-radius: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pricelist__h3 {
+  font-family: $font-raleway;
+  font-weight: 700;
+  color: $color-black;
+  font-size: 21px;
+  padding: 34px 0 14px;
+}
+.pricelist__offertbox:nth-child(1) .pricelist__price {
+  font-family: $font-open-sans;
+  font-weight: 300;
+  color: $color-redish;
+  font-size: 46px;
+  line-height: 64px;
+}
+.pricelist__offertbox:nth-child(2) .pricelist__price{
+  font-family: $font-open-sans;
+  font-weight: 300;
+  color: #07ACE6;
+  font-size: 46px;
+  line-height: 64px;
+}
+.pricelist__offertbox:nth-child(3) .pricelist__price{
+  font-family: $font-open-sans;
+  font-weight: 300;
+  color: $color-green;
+  font-size: 46px;
+  line-height: 64px;
+}
+.pricelist__limited {
+  font-family: $font-raleway;
+  font-weight: 700;
+  color: $color-black;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 5px 0 50px;
+}
+.pricelist__offertbox:nth-child(2) .pricelist__limited {
+  padding: 5px 0 61px;
+  line-height: 14px;
+}
+
+.pricelist__list {
+  padding-bottom: 60px;
+}
+
+.pricelist__list li {
+  font-family: $font-open-sans;
+  color: $color-black;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.pricelist__offertbox:nth-child(2) .pricelist__list li {
+  margin-bottom: 26px;
+}
+
+.pricelist__checked::before {
+  content: "";
+  background-image: url("../assets/Ckechmark-1.svg");
+  height: 11px;
+  width: 11px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pricelist__checked--not::before {
+  content: "";
+  background-image: url("../assets/Close.svg");
+  height: 11px;
+  width: 11px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pricelist__btn {
+  height: 50px;
+  border-radius: 25px;
+  font-family: $font-open-sans;
+  color: $color-white;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  position: absolute;
+}
+.pricelist__offertbox:nth-child(1) .pricelist__btn {
+  background-color: $color-redish;
+  width: 150px;
+  bottom: -25px;
+}
+.pricelist__offertbox:nth-child(2) .pricelist__btn {
+  background-color: #07ACE6;
+  width: 165px;
+  bottom: -25px;
+}
+.pricelist__offertbox:nth-child(3) .pricelist__btn {
+  background-color: $color-green;
+  width: 150px;
+  bottom: -25px;
+}

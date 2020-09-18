@@ -1,0 +1,42 @@
+.header {
+  width: 100vw;
+  box-shadow: 0 3px 6px $color-primary-shadow;
+}
+.header__container {
+  width: 1352px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: $color-blue;
+  font-family: $font-raleway;
+  font-size: 32px;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 37px;
+}
+.header__nav{
+  display: flex;
+}
+.header__nav .nav__li {
+  padding: 0 32px;
+}
+.header__nav .nav__a {
+  font-family: $font-open-sans;
+  font-size: 11px;
+  text-decoration: none;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 3.28px;
+  color: $color-grey;
+  text-transform: uppercase;
+  padding: 28px 18px 23px;
+}
+
+.header__nav .nav__a:hover {
+  color: $color-black;
+  border-bottom: 4px solid $color-blue;
+}
