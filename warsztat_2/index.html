@@ -28,6 +28,11 @@
                         <a href="#" class="nav__a">contact</a>
                     </li>
                 </ul>
+                <button class="header__burger">
+                    <span class="burger__span"></span>
+                    <span class="burger__span"></span>
+                    <span class="burger__span"></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -38,6 +43,7 @@
             <h1 class="openning__h1">Sell More!</h1>
             <p class="openning__p">Open shop on our platform and increase your sales</p>
             <a href="#" class="openning__a">Open your shop</a>
+            <img class="openning__img" src="assets/Background.png" alt="desktop with computer">
         </section>
 
 
@@ -109,42 +115,54 @@
             <h2 class="pricelist__h2">Pricing</h2>
             <div class="pricelist__container">
                 <div class="pricelist__offertbox">
-                    <h3 class="pricelist__h3">Basic</h3>
-                    <div class="pricelist__price">$0</div>
-                    <div class="pricelist__limited"></div>
-                    <ul class="pricelist__list">
-                        <li class="pricelist__checked">100 MB HDD</li>
-                        <li class="pricelist__checked">1 Subdomain  </li>
-                        <li class="pricelist__checked">2 E-mails</li>
-                        <li class="pricelist__checked--not">Two years licence</li>
-                        <li class="pricelist__checked--not">Full support</li>
-                    </ul>
+                    <div class="pricelist__box--left">
+                        <h3 class="pricelist__h3">Basic</h3>
+                        <div class="pricelist__price">$0</div>
+                        <div class="pricelist__limited"></div>
+                    </div>
+                    <div class="pricelist__box--right">
+                        <ul class="pricelist__list">
+                            <li class="pricelist__checked">100 MB HDD</li>
+                            <li class="pricelist__checked">1 Subdomain  </li>
+                            <li class="pricelist__checked">2 E-mails</li>
+                            <li class="pricelist__checked--not">Two years licence</li>
+                            <li class="pricelist__checked--not">Full support</li>
+                        </ul>
+                    </div>
+                        <a href="#" class="pricelist__btn">Begin</a>
+                </div>
+                <div class="pricelist__offertbox">
+                    <div class="pricelist__box_left">
+                        <h3 class="pricelist__h3">Professional</h3>
+                        <div class="pricelist__price">$25</div>
+                        <div class="pricelist__limited">Limited offer</div>
+                    </div>
+                    <div class="pricelist__box--right">
+                        <ul class="pricelist__list">
+                            <li class="pricelist__checked">500 MB HDD</li>
+                            <li class="pricelist__checked">2 Subdomain  </li>
+                            <li class="pricelist__checked">5 E-mails</li>
+                            <li class="pricelist__checked">One years licence</li>
+                            <li class="pricelist__checked--not">Full support</li>
+                        </ul>
+                    </div>
                     <a href="#" class="pricelist__btn">Begin</a>
                 </div>
                 <div class="pricelist__offertbox">
-                    <h3 class="pricelist__h3">Professional</h3>
-                    <div class="pricelist__price">$25</div>
-                    <div class="pricelist__limited">Limited offer</div>
-                    <ul class="pricelist__list">
-                        <li class="pricelist__checked">500 MB HDD</li>
-                        <li class="pricelist__checked">2 Subdomain  </li>
-                        <li class="pricelist__checked">5 E-mails</li>
-                        <li class="pricelist__checked">One years licence</li>
-                        <li class="pricelist__checked--not">Full support</li>
-                    </ul>
-                    <a href="#" class="pricelist__btn">Begin</a>
-                </div>
-                <div class="pricelist__offertbox">
-                    <h3 class="pricelist__h3">Premium</h3>
-                    <div class="pricelist__price">$50</div>
-                    <div class="pricelist__limited">Limited offer</div>
-                    <ul class="pricelist__list">
-                        <li class="pricelist__checked">2 GB HDD</li>
-                        <li class="pricelist__checked">5 Subdomain  </li>
-                        <li class="pricelist__checked">20 E-mails</li>
-                        <li class="pricelist__checked">Two years licence</li>
-                        <li class="pricelist__checked">Full support</li>
-                    </ul>
+                    <div class="pricelist__box--left">
+                        <h3 class="pricelist__h3">Premium</h3>
+                        <div class="pricelist__price">$50</div>
+                        <div class="pricelist__limited">Limited offer</div>
+                    </div>
+                    <div class="pricelist__box--right">
+                        <ul class="pricelist__list">
+                            <li class="pricelist__checked">2 GB HDD</li>
+                            <li class="pricelist__checked">5 Subdomain</li>
+                            <li class="pricelist__checked">20 E-mails</li>
+                            <li class="pricelist__checked">Two years licence</li>
+                            <li class="pricelist__checked">Full support</li>
+                        </ul>
+                    </div>
                     <a href="#" class="pricelist__btn">Begin</a>
                 </div>
             </div>
@@ -198,5 +216,7 @@
             </div>
         </footer>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,28 +1,31 @@
 .stats {
-  height: 531px;
+  margin: 100px;
 }
+
 .stats__h2 {
   font-family: $font-raleway;
   color: $color-black;
   font-size: 36px;
   text-align: center;
-  padding-top: 100px;
+
 }
+
 .stats__container {
-  height: 389px;
-  width: 800px;
-  margin: 0 auto;
+  max-width: 792px;
+  margin: 100px auto 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .stats__element {
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
 }
-.stats__number{
+
+.stats__number {
   font-family: $font-raleway;
   color: $color-black;
   font-size: 20px;
@@ -31,7 +34,8 @@
   padding: 80px 0 20px;
   letter-spacing: 6px;
 }
-.stats__text{
+
+.stats__text {
   font-family: $font-raleway;
   color: $color-grey;
   font-size: 16px;
@@ -39,12 +43,14 @@
   text-align: center;
   width: 120px;
 }
-.stats__img{
+
+.stats__img {
   position: absolute;
   left: 40%;
 
 }
-.stats__circle{
+
+.stats__circle {
   position: absolute;
   left: 20%;
   content: "";
@@ -52,21 +58,53 @@
   height: 63px;
   border-radius: 50%;
 }
-.stats__element:nth-child(1) .stats__circle{
+
+.stats__element:nth-child(1) .stats__circle {
   background-color: $color-redish;
 }
-.stats__element:nth-child(2) .stats__circle{
+
+.stats__element:nth-child(2) .stats__circle {
   background-color: $color-blue;
 }
-.stats__element:nth-child(3) .stats__circle{
+
+.stats__element:nth-child(3) .stats__circle {
   background-color: $color-green;
 }
-.stats__element:nth-child(1) .stats__img{
+
+.stats__element:nth-child(1) .stats__img {
   top: 0;
 }
-.stats__element:nth-child(2) .stats__img{
+
+.stats__element:nth-child(2) .stats__img {
   top: 15px;
 }
-.stats__element:nth-child(3) .stats__img{
+
+.stats__element:nth-child(3) .stats__img {
   top: 5px;
+}
+
+
+@include media {
+  .stats {
+    min-height: 600px;
+    margin: 40px;
+
+    .stats__h2 {
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .stats__container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 25px;
+      margin-bottom: 50px;
+
+
+      .stats__element {
+        margin-top: 25px;
+      }
+    }
+  }
 }

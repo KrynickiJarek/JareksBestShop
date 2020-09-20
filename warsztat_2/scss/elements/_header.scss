@@ -1,29 +1,35 @@
 .header {
   width: 100vw;
-  box-shadow: 0 3px 6px $color-primary-shadow;
+  box-shadow: 0 3px 6px $color-black-shadow;
 }
+
 .header__container {
-  width: 1352px;
+  max-width: 1352px;
   height: 70px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   color: $color-blue;
   font-family: $font-raleway;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 300;
   text-decoration: none;
   line-height: 37px;
+  margin-left: 25px;
 }
-.header__nav{
+
+.header__nav {
   display: flex;
 }
+
 .header__nav .nav__li {
   padding: 0 32px;
 }
+
 .header__nav .nav__a {
   font-family: $font-open-sans;
   font-size: 11px;
@@ -39,4 +45,74 @@
 .header__nav .nav__a:hover {
   color: $color-black;
   border-bottom: 4px solid $color-blue;
+}
+
+.header__burger {
+  display: none;
+}
+
+@include media {
+  .header__burger {
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    border: none;
+    background-color: rgba($color-white, 0);
+
+
+    .burger__span {
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: $color-blue;
+      margin-bottom: 5px;
+      transition: 0.3s all ease-in-out;
+
+      .burger__span:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+  .header__burger--click {
+    .burger__span:nth-child(1){
+     transform:  translate(0, 7px) rotate(45deg);
+    }
+    .burger__span:nth-child(2){
+      opacity: 0;
+    }
+    .burger__span:nth-child(3){
+      transform:  translate(0, -7px)  rotate(-45deg);
+    }
+  }
+
+
+  .header__nav {
+    width: 100vw;
+    position: absolute;
+    top: 100px;
+    left: -100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $color-white;
+    padding-left: 25px;
+    height: 150px;
+    box-shadow: 0 3px 5px $color-black-shadow;
+
+  }
+  .header__nav--show {
+    left: 0;
+  }
+  .header__nav .nav__li {
+    padding-bottom: 15px
+  }
+
+  .header__nav .nav__a {
+    padding: 0;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
 }

@@ -1,9 +1,9 @@
 
 .openning {
   width: 100vw;
-  height: 712px;
+  max-height: 712px;
   margin-top: 130px;
-  background-image: url("../assets/Background.png");
+  //background-image: url("../assets/Background.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -12,20 +12,28 @@
   align-items: center;
 }
 
-.openning__h1{
+.openning__img {
+  width: 100vw;
+  height: auto;
+}
+
+
+.openning__h1 {
   font-family: $font-raleway;
   color: $color-black;
   font-size: 49px;
 
 }
+
 .openning__p {
   font-family: $font-open-sans;
   color: $color-black;
   font-size: 16px;
   padding: 20px 0 38px;
+  text-align: center;
 }
 
-.openning__a{
+.openning__a {
   font-family: $font-open-sans;
   color: $color-white;
   font-size: 16px;
@@ -37,5 +45,15 @@
   border-radius: 40px;
   text-align: center;
   line-height: 67px;
-  box-shadow: 5px 10px 14px #07ACE629;
+  box-shadow: 5px 10px 14px $color-blue-shadow;
+}
+
+@include media {
+  .openning__a {
+    width: 90vw;
+  }
+  .openning__img {
+    width: 200vw;
+    overflow: hidden;
+  }
 }
